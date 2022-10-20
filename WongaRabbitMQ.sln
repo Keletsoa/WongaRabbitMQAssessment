@@ -5,6 +5,10 @@ VisualStudioVersion = 17.3.32929.385
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ServiceA", "ServiceA\ServiceA.csproj", "{4F8A4FCF-9229-4F62-8589-AC9545F376A3}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ServiceB", "ServiceB\ServiceB.csproj", "{0C7FB9F7-B8EA-4244-98F8-8C9EF7127786}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RabbitService", "RabbitService\RabbitService.csproj", "{3781C0BC-1C94-4910-9702-F19470A60BFF}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +19,14 @@ Global
 		{4F8A4FCF-9229-4F62-8589-AC9545F376A3}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{4F8A4FCF-9229-4F62-8589-AC9545F376A3}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{4F8A4FCF-9229-4F62-8589-AC9545F376A3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0C7FB9F7-B8EA-4244-98F8-8C9EF7127786}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0C7FB9F7-B8EA-4244-98F8-8C9EF7127786}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0C7FB9F7-B8EA-4244-98F8-8C9EF7127786}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0C7FB9F7-B8EA-4244-98F8-8C9EF7127786}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3781C0BC-1C94-4910-9702-F19470A60BFF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3781C0BC-1C94-4910-9702-F19470A60BFF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3781C0BC-1C94-4910-9702-F19470A60BFF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3781C0BC-1C94-4910-9702-F19470A60BFF}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
