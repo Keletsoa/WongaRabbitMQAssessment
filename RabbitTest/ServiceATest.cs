@@ -6,6 +6,15 @@ namespace RabbitTest
     public class ServiceATest
     {
         [Fact]
+        public void TestConnection()
+        {
+            var messagingService = new RabbitMessagingService();
+            var connection = messagingService.GetConnection();
+            
+            Assert.NotNull(connection);
+        }
+
+        [Fact]
         public void TestPass()
         {
             var messagingService = new RabbitMessagingService();
