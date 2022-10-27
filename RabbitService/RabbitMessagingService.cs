@@ -47,8 +47,10 @@ namespace RabbitService
                                 body: body);
         }
 
-        public void ReceiveMessage(IModel model)
+        public string ReceiveMessage(IModel model)
         {
+            string msg = string.Empty;
+
             model.QueueDeclare(queue: _queueName,
                                 durable: _durable,
                                 exclusive: _exclusive,
@@ -60,13 +62,16 @@ namespace RabbitService
             {
                 var body = basicDeliverEventArgs.Body.ToArray();
                 var message = Encoding.UTF8.GetString(body);
-                Console.WriteLine("Hello {0}, I am your father!", message);
+                msg += message;
+                //Console.WriteLine(, );
             };
 
             model.BasicConsume(queue: _queueName,
                                 autoAck: true,
                                 consumer: consumer);
-            Console.ReadKey();
+
+            return msg;
+            //Console.ReadKey();
         }
     }
 }

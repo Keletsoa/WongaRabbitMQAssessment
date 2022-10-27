@@ -5,4 +5,7 @@ using RabbitService;
 RabbitMessagingService messagingService = new RabbitMessagingService();
 IConnection connection = messagingService.GetConnection();
 IModel model = connection.CreateModel();
-messagingService.ReceiveMessage(model);
+var message = messagingService.ReceiveMessage(model);
+
+Console.WriteLine("Hello {0}, I am your father!", message);
+Console.ReadKey();
